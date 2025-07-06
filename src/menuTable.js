@@ -156,7 +156,7 @@ export const menuTable = (function() {
             desc.textContent = item.desc;
 
             const price = document.createElement('td');
-            price.textContent = item.price;
+            price.textContent = item.price + '$';
 
             tr.append(name, desc, price);
             tbody.append(tr);
