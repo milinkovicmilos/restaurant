@@ -1,3 +1,5 @@
+import './styles.css';
+
 import { load as homeLoad } from './home.js';
 import { load as menuLoad } from './menu.js';
 import { load as aboutLoad } from './about.js';

@@ -102,9 +102,14 @@ const pages = [
 ];
 
 export const menuTable = (function() {
+    const tableWrapper = document.createElement('div');
+    tableWrapper.id = 'menu-table-wrapper';
+
     const table = document.createElement('table');
     table.id = 'menu-table';
     table.append(document.createElement('thead'), document.createElement('tbody'));
+    tableWrapper.append(table);
+
     const theadRow = table.querySelector('thead');
     for (let i = 0; i < 3; i++) {
         const td = document.createElement('td');
@@ -135,7 +140,7 @@ export const menuTable = (function() {
 
     const createTable = (parentNode) => {
         renderTable();
-        parentNode.append(table);
+        parentNode.append(tableWrapper);
     };
 
     const renderTable = () => {
