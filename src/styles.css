@@ -16,7 +16,11 @@ header>nav {
 }
 
 header>nav>button {
+    padding: 5px;
     margin: 0px 5px;
+    background-color: #99eaf0;
+    border: none;
+    border-radius: 5px;
 }
 
 #content {
@@ -41,6 +45,7 @@ header>nav>button {
 }
 
 #menu-table {
+    width: 100%;
     border-collapse: collapse;
 }
 
